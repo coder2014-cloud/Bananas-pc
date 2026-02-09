@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Windows 1.01 – PCjs on GitHub Pages</title>
+
+  <style>
+    body {
+      background: #111;
+      color: #eee;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .pcjs-container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Make the emulator canvas responsive */
+    .pcjs-machine canvas {
+      width: 100% !important;
+      height: auto !important;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Windows 1.01 (PCjs Emulator)</h1>
+
+  <div class="pcjs-container">
+    <div class="pcjs-machine"
+         data-config="https://www.pcjs.org/configs/pc/machines/ibm5150/windows/1.01/windows101.json">
+    </div>
+  </div>
+
+  <!-- PCjs loader script -->
+  <script src="https://www.pcjs.org/scripts/pcjs.js"></script>
+
+</body>
+</html>
